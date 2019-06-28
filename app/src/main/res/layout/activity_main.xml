@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_money_principal"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/ten_thousand_rmb"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_time_years"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_money_principal" />
+
+    <EditText
+        android:id="@+id/et_rate_annual"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/percent"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_money_principal" />
+
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="36dp"
+        android:onClick="compute"
+        android:text="@string/enter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_rate_annual" />
+
+    <TextView
+        android:id="@+id/tv_time_years"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/time_years"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/et_time_years"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money_principal" />
+
+    <TextView
+        android:id="@+id/tv_rate_annual"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/rate_annual"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/et_rate_annual"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_years" />
+
+    <TextView
+        android:id="@+id/tv_money_principal"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/money_principal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/et_money_principal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_results_1"
+        android:layout_width="198dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compute" />
+
+    <TextView
+        android:id="@+id/tv_results_2"
+        android:layout_width="192dp"
+        android:layout_height="419dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compute" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

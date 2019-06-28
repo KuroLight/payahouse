@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">小辣鸡计算器</string>
+
+    <string name="money_principal">贷款金额</string>
+    <string name="ten_thousand_rmb">20(万元)</string>
+    <string name="time_years">贷款年限</string>
+    <string name="year">15(年)</string>
+    <string name="rate_annual">年利率</string>
+    <string name="percent">4.90(%)</string>
+
+    <string name="enter">马上计算</string>
+
+</resources>
